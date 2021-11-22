@@ -21,3 +21,4 @@ urlpatterns = [
     path('api/v1/Electro/', include('Electro.urls')),
     path("api-auth/", include("rest_framework.urls")),
 ]
+
