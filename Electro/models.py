@@ -4,7 +4,7 @@ from django.contrib.auth import get_user_model
 
 class Electro(models.Model):
     elctronic_name = models.CharField(max_length=64)
-    rating = models.IntegerField(max_length=3)
+    rating = models.IntegerField()
     description = models.TextField()
     owner = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
 
